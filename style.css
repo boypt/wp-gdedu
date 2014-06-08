@@ -362,10 +362,10 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	width: 966px;
+    margin-left:auto;
+    margin-right:auto;
+	padding-left:4px;
 }
 .main-navigation ul {
 	list-style: none;
@@ -376,9 +376,27 @@ a:active {
 	float: left;
 	position: relative;
 }
-.main-navigation a {
-	display: block;
-	text-decoration: none;
+.main-navigation li a {
+	float:left;
+	display:block;
+	padding-left:6px;
+	height:44px;
+	background:url(images/menu_on_left.gif) no-repeat left top;
+	cursor:pointer;
+	text-decoration:none;
+}
+.main-navigation li a span {
+	float:left;
+	line-height:44px;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:none;
+	background-image: url(images/menu_on_right.gif);
+	background-repeat: no-repeat;
+	background-position: right 44px;
+	padding-right: 14px;
+	padding-left: 10px;
 }
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -398,6 +416,14 @@ a:active {
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
+	background-position:left 100%;
+}
+.main-navigation li:hover > a span {
+	background-position:right 100%;
+	color:#333333;
+	text-decoration:none;
+	padding-right: 14px;
+	padding-left: 10px;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -411,6 +437,15 @@ a:active {
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
+	background-position:left 100%;
+}
+.main-navigation .current_page_item a span,
+.main-navigation .current-menu-item a span{
+	background-position:right 100%;
+	color:#333333;
+	text-decoration:none;
+	padding-right: 14px;
+	padding-left: 10px;
 }
 /* Small menu */
 .menu-toggle {
@@ -675,3 +710,7 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+.searchbox form {
+    margin-top:18px;
+}

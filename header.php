@@ -38,16 +38,8 @@
     <table width="100%" height="77" border="0" cellspacing="0">
       <tr>
         <td  align="right"><div class="searchbox">
-            <form name="cscsearch" action="#" method="get" id="cscsearch">
-              <div class="l">
-                <div class="m">
-                  <input name="q" type="text" class="searchkey " onfocus="glb_searchTextOnfocus(this);"  onblur="glb_searchTextOnBlur(this);" value="搜索" size="30" />
-                  <input type="submit" class="searchbut" value=""/>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div align="right"></div></td>
+        <?php get_search_form(); ?>
+        </td>
       </tr>
     </table>
   </div>
@@ -55,34 +47,15 @@
 
 
 <div class="nav">
-  <div class="cen">
-    <div id=menu_out>
-      <div id=menu_in>
-        <div id=menu>
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'gdedu' ); ?></button>
-            <?php wp_nav_menu( array( 
-                'theme_location' => 'primary',
-                'menu_class' => 'menu_line',
-                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>'
-            ) ); ?>
-          <ul id=nav>
-            <li><a class=nav_on id=mynav0 onmouseover=javascript:qiehuan(0) href="#/"><span>首 页</span></A></li>
-            <li class="menu_line"></li>
-            <li><a href="#" onmouseover="javascript:qiehuan(1)" id="mynav1" class="nav_off"><span>班班通</span></a></li>
-            <li class="menu_line"></li>
-            <li><a href="#" onmouseover="javascript:qiehuan(2)" id="mynav2" class="nav_off"><span>资源中心</span></a></li>
-            <li class="menu_line"></li>
-            <li><a href="#" onmouseover="javascript:qiehuan(3)" id="mynav3" class="nav_off"><span>同步课堂</span></a></li>
-            <li class="menu_line"></li>
-            <li><a href="#" onmouseover="javascript:qiehuan(4)" id="mynav4" class="nav_off"><span>特色专题</span></a></li>
-            <li class="menu_line"></li>
-            <li><a href="#" onmouseover="javascript:qiehuan(5)" id="mynav5" class="nav_off"><span>应用下载</span></a></li>
-            <li class="menu_line"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+    <button class="menu-toggle"><?php _e( 'Primary Menu', 'gdedu' ); ?></button>
+    <?php wp_nav_menu( array(
+        'theme_location' => 'primary',
+        'menu_class' => 'main-navigation',
+        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'link_before' => '<span>',
+        'link_after' => '</span>'
+
+    ) ); ?>
 </div>
 <!--
 
