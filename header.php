@@ -45,24 +45,15 @@
   </div>
 </div>
 
-
-<div class="nav">
-    <button class="menu-toggle"><?php _e( 'Primary Menu', 'gdedu' ); ?></button>
-    <?php wp_nav_menu( array(
-        'theme_location' => 'primary',
-        'menu_class' => 'main-navigation',
-        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'link_before' => '<span>',
-        'link_after' => '</span>'
-
-    ) ); ?>
-</div>
-<!--
-
--->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-		</nav><!-- #site-navigation -->
+<nav id="site-navigation" class="main-navigation" role="navigation">
+    <div class="nav">
+        <?php wp_nav_menu( array(
+            'theme_location' => 'primary',
+            'link_before' => '<span>',
+            'link_after' => '</span>'
+        ) ); ?>
+    </div>
+</nav><!-- #site-navigation -->
 
 
 	<div id="content" class="site-content">

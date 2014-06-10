@@ -362,10 +362,8 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	width: 966px;
     margin-left:auto;
     margin-right:auto;
-	padding-left:4px;
 }
 .main-navigation ul {
 	list-style: none;
