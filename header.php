@@ -22,14 +22,6 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'gdedu' ); ?></a>
 
-<!--
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
--->
-
-<!-- orig1 -->
 <div class="top">晚上好！欢迎来到广东教育视频网 [<a href="#" class="r">登录</a>] 广东-广州 [<a href="#" class="b">更换</a>] <span><a href="#" class="w">设置</a> | <a href="#" class="w">帮助中心</a> | <a href="#" class="w">退出</a> </span></div>
 <div class="logo"> <a href="#" >
   <div class="logo_left"></div>

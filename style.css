@@ -362,6 +362,7 @@ a:active {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
+	width: 1000px;
     margin-left:auto;
     margin-right:auto;
 }
