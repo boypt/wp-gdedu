@@ -38,13 +38,13 @@
 </div>
 
 <nav id="site-navigation" class="main-navigation" role="navigation">
-    <div class="nav">
-        <?php wp_nav_menu( array(
-            'theme_location' => 'primary',
-            'link_before' => '<span>',
-            'link_after' => '</span>'
-        ) ); ?>
-    </div>
+        <div class="nav">
+            <?php wp_nav_menu( array(
+                'theme_location' => 'primary',
+                'link_before' => '<span>',
+                'link_after' => '</span>'
+            ) ); ?>
+        </div>
 </nav><!-- #site-navigation -->
 
 

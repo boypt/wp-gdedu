@@ -308,8 +308,9 @@ BODY {
 
 .nav {
 	height: 44px;
-	background-image: url(../images/nav_bg.gif);
-	background-repeat: repeat-x;
+    margin-left:auto;
+	margin-right: auto;
+	width: 1000px;
 }
 
 .nav_1 .cen {
@@ -394,7 +395,7 @@ BODY {
 }
 .ind_1 {
 	clear: both;
-	width: 1000px;
+	width: 788px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -1152,3 +1153,5 @@ BODY {
 .bitdiv{display:inline-block;width:18px;height:18px;margin:0 10px 10px 0px;cursor:pointer;float:right;}
 .defimg{background-image:url(../images/02.png)}
 .curimg{background-image:url(../images/01.png)}
+
+.txt_process {width:966px;} 
