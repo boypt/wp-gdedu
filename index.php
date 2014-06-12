@@ -17,8 +17,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
         <?php
 		get_template_part( 'idxbanner' );
+		get_template_part( 'idxlist' );
         ?>
 
+<!--
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
@@ -39,6 +41,8 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+
+-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

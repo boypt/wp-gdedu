@@ -8,7 +8,6 @@
  */
 ?>
 
-
 <div class="banner"></div>
 <div class="nav_1">
   <div class="cen"><a href="#">活动首页</a> <a href="#"> 活动规则</a> <a href="#">作品要求</a> <a href="#">新闻动态 </a> <a href="#"> 奖项设置</a> <span> <a href="#">上传作品</a> </span> </div>

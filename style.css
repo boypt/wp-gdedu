@@ -715,10 +715,12 @@ object {
 
 .pptbox_slider {
     width:620px;
+    height:325px;
     float:left;
 }
 .pptbox_txt {
     width:330px;
+    height:325px;
     margin-left:10px;
     padding-left:5px;
     float:left;
